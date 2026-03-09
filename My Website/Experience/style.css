@@ -1,0 +1,338 @@
+:root {
+  --main-color: #d4a373;
+  --main-color-80: #faedcd;
+  --main-color-60: #fefae0;
+  --main-color-40: #e9edc9;
+  --main-color-20: #ccd5ae;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins' sans-serif;
+  transition: all ease-in-out 300ms;
+}
+body {
+  background-color: rgb(100, 78, 78);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* heading section */
+.heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--main-color);
+  text-transform: capitalize;
+}
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.logo-wrapper h1 {
+  font-size: 1.25rem;
+}
+.logo > img {
+  width: 70px;
+}
+#top-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+#top-nav li {
+  font-size: 1.3rem;
+}
+/* end heading section */
+
+/* hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: var(--main-color);
+  text-transform: capitalize;
+}
+h1 {
+  text-decoration: underline;
+}
+h2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  column-gap: 0.5rem;
+  color: white;
+  width: 100%;
+}
+h2::before,
+h2::after {
+  content: '';
+  height: 2px;
+  background-color: white;
+  display: block;
+  width: 100%;
+}
+.color-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.color-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.4rem;
+}
+.color-info:hover .fa-heart {
+  color: red;
+}
+.color-info > i {
+  cursor: pointer;
+}
+.color-item {
+  display: flex;
+  /* flex-grow: 1; */
+  border-radius: 10px;
+  overflow: hidden;
+  text-transform: capitalize;
+  /* font-size: 1rem; */
+}
+.color-item li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 1rem; */
+  height: 100px;
+  /* text-transform: uppercase; */
+  background-color: red;
+  flex-grow: 1;
+  cursor: pointer;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.color-info {
+  margin-bottom: 1rem;
+}
+.color-item li:hover {
+  flex-grow: 4;
+  color: black;
+}
+.color-one li:nth-child(1) {
+  background-color: #ccd5ae;
+}
+.color-one li:nth-child(2) {
+  background-color: #e9edc9;
+}
+.color-one li:nth-child(3) {
+  background-color: #fefae0;
+}
+.color-one li:nth-child(4) {
+  background-color: #faedcd;
+}
+.color-one li:nth-child(5) {
+  background-color: #d4a373;
+}
+.color-two li:nth-child(1) {
+  background-color: #d8e2dc;
+}
+.color-two li:nth-child(2) {
+  background-color: #ffe5d9;
+}
+.color-two li:nth-child(3) {
+  background-color: #ffcad4;
+}
+.color-two li:nth-child(4) {
+  background-color: #f4acb7;
+}
+.color-two li:nth-child(5) {
+  background-color: #9d8189;
+}
+.color-three li:nth-child(1) {
+  background-color: #cdb4db;
+}
+.color-three li:nth-child(2) {
+  background-color: #ffc8dd;
+}
+.color-three li:nth-child(3) {
+  background-color: #ffafcc;
+}
+.color-three li:nth-child(4) {
+  background-color: #bde0fe;
+}
+.color-three li:nth-child(5) {
+  background-color: #a2d2ff;
+}
+.color-four li:nth-child(1) {
+  background-color: #e63946;
+}
+.color-four li:nth-child(2) {
+  background-color: #f1faee;
+}
+.color-four li:nth-child(3) {
+  background-color: #a8dadc;
+}
+.color-four li:nth-child(4) {
+  background-color: #457b9d;
+}
+.color-four li:nth-child(5) {
+  background-color: #1d3557;
+}
+.color-five li:nth-child(1) {
+  background-color: #ffbe0b;
+}
+.color-five li:nth-child(2) {
+  background-color: #fb5607;
+}
+.color-five li:nth-child(3) {
+  background-color: #ff006e;
+}
+.color-five li:nth-child(4) {
+  background-color: #8338ec;
+}
+.color-five li:nth-child(5) {
+  background-color: #3a86ff;
+}
+.color-six li:nth-child(1) {
+  background-color: #ffe5ec;
+}
+.color-six li:nth-child(2) {
+  background-color: #ffc2d1;
+}
+.color-six li:nth-child(3) {
+  background-color: #ffb3c6;
+}
+.color-six li:nth-child(4) {
+  background-color: #ff8fab;
+}
+.color-six li:nth-child(5) {
+  background-color: #fb6f92;
+}
+.color-seven li:nth-child(1) {
+  background-color: #f4f1de;
+}
+.color-seven li:nth-child(2) {
+  background-color: #e07a5f;
+}
+.color-seven li:nth-child(3) {
+  background-color: #3d405b;
+}
+.color-seven li:nth-child(4) {
+  background-color: #81b29a;
+}
+.color-seven li:nth-child(5) {
+  background-color: #f2cc8f;
+}
+.color-eight li:nth-child(1) {
+  background-color: #edede9;
+}
+.color-eight li:nth-child(2) {
+  background-color: #d6ccc2;
+}
+.color-eight li:nth-child(3) {
+  background-color: #f5ebe0;
+}
+.color-eight li:nth-child(4) {
+  background-color: #e3d5ca;
+}
+.color-eight li:nth-child(5) {
+  background-color: #d5bdaf;
+}
+.color-nine li:nth-child(1) {
+  background-color: #f6bd60;
+}
+.color-nine li:nth-child(2) {
+  background-color: #f7ede2;
+}
+.color-nine li:nth-child(3) {
+  background-color: #f5cac3;
+}
+.color-nine li:nth-child(4) {
+  background-color: #84a59d;
+}
+.color-nine li:nth-child(5) {
+  background-color: #f28482;
+}
+@media screen and (min-width: 768px) {
+  #top-nav {
+    gap: 1rem;
+  }
+  #top-nav li {
+    font-size: 1.5rem;
+  }
+  .color-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1.5rem;
+  }
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .color-info {
+    margin-top: 0.4rem;
+  }
+  .color-info > p {
+    font-size: 1.3rem;
+  }
+  .fa-ellipsis {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #top-nav {
+    gap: 1.5rem;
+  }
+  #top-nav li {
+    font-size: 1.8rem;
+  }
+  .color-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+}

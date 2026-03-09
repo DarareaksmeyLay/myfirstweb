@@ -1,0 +1,11 @@
+ul {
+  display: flex;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
