@@ -18,6 +18,10 @@ const objArr = [{
 }
 ];
 
+objArr.push({name: "kyky", age:"20", city:"kompot"})
+
+const name = "reaksmey";
+
 console.log(arr);
 console.table(arr);
 console.log(arr.length);
